@@ -246,11 +246,15 @@
   </style>
 </head>
 <body>
+
+  <!-- Hidden YouTube player -->
+  <div id="yt-player" style="position:fixed;width:1px;height:1px;top:-9999px;left:-9999px;"></div>
+
   <div class="page">
 
     <div class="header">
       <div class="stamp">Confidential</div>
-      <div class="case-id">Case No. PVSAB-2026-Q1 &nbsp;·&nbsp; </div>
+      <div class="case-id">Case No. PVSAB-2026-Q1 &nbsp;·&nbsp;</div>
       <h1>Pojkvänsuthyrning AB — Q1 2026 profitability analysis</h1>
       <p class="subtitle">Nordic companionship deployment services, Nigerian market division</p>
       <div class="meta-row">
@@ -263,7 +267,7 @@
 
     <div class="section">
       <div class="section-title">Company background</div>
-      <p>Pojkvänsuthyrning AB ("PVSAB") was incorporated in 2025 in Stockholm, Sweden, to serve the growing demand for Nordic companionship experiences in the West African market. The company recruits, trains, and deploys Swedish boyfriends on medium- and long-term contracts to Nigerian clients (informally referred to as “soft-life boys” in local markets). Core service offerings include reading stories, sleep assistance, complement giving and sink maintenance.</p>
+      <p>Pojkvänsuthyrning AB ("PVSAB") was incorporated in 2025 in Stockholm, Sweden, to serve the growing demand for Nordic companionship experiences in the West African market. The company recruits, trains, and deploys Swedish boyfriends on medium- and long-term contracts to Nigerian clients (informally referred to as "soft-life boys" in local markets). Core service offerings include reading stories, sleep assistance, complement giving and sink maintenance.</p>
       <p>PVSAB's operational model relies on a fleet of assets (the boyfriends) maintained to strict quality standards. Asset durability has emerged as a key strategic challenge following repeated exposure to client cooking environments.</p>
     </div>
 
@@ -367,30 +371,50 @@
 
   </div>
 
-  <script>
-    function checkAnswer() {
-      var input = document.getElementById('answer-input');
-      var error = document.getElementById('error-msg');
-      var reveal = document.getElementById('reveal-section');
-      var val = parseInt(input.value, 10);
-      var correct = Math.round((2101400 / 3051700) * 100);
-      if (isNaN(val)) {
-        error.textContent = 'Please enter a number.';
-        return;
-      }
-      if (val === correct) {
-        error.textContent = '';
-        reveal.classList.add('open');
-        reveal.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        error.textContent = 'Incorrect. Review the financials carefully and try again.';
-        input.value = '';
-        input.focus();
-      }
+
+
+<audio id="bg-audio" src="song.mp3" loop preload="auto" style="display:none;"></audio>
+
+<script>
+  var musicStarted = false;
+
+  function startMusic() {
+    if (!musicStarted) {
+      musicStarted = true;
+      var audio = document.getElementById('bg-audio');
+      audio.currentTime = 17;
+      audio.play();
     }
-    document.getElementById('answer-input').addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') checkAnswer();
-    });
-  </script>
+  }
+
+  document.addEventListener('click', startMusic, { once: true });
+  document.addEventListener('keydown', startMusic, { once: true });
+
+  function checkAnswer() {
+    startMusic();
+    var input = document.getElementById('answer-input');
+    var error = document.getElementById('error-msg');
+    var reveal = document.getElementById('reveal-section');
+    var val = parseInt(input.value, 10);
+    var correct = Math.round((2101400 / 3051700) * 100);
+    if (isNaN(val)) {
+      error.textContent = 'Please enter a number.';
+      return;
+    }
+    if (val === correct) {
+      error.textContent = '';
+      reveal.classList.add('open');
+      reveal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      error.textContent = 'Incorrect. Review the financials carefully and try again.';
+      input.value = '';
+      input.focus();
+    }
+  }
+
+  document.getElementById('answer-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') checkAnswer();
+  });
+</script>
 </body>
 </html>
