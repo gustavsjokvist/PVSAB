@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PVSAB Case Study — Module 7</title>
+  <title>PVSAB Classified Dossier</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -92,6 +92,28 @@
       margin-bottom: 0.75rem;
     }
     p:last-child { margin-bottom: 0; }
+    .briefing-box {
+      background: #1a1a1a;
+      color: #f5f3ee;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 0;
+    }
+    .briefing-box .briefing-label {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 0.6rem;
+    }
+    .briefing-box p {
+      font-size: 14px;
+      color: #f5f3ee;
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
     .data-table {
       width: 100%;
       border-collapse: collapse;
@@ -166,6 +188,9 @@
       color: #666;
       margin-top: 0.5rem;
     }
+    .data-table tr.last-row td {
+  border-bottom: 2px solid #1a1a1a;
+  }
     .answer-area { margin-top: 1.5rem; }
     .answer-row {
       display: flex;
@@ -229,15 +254,6 @@
       text-decoration: underline;
       word-break: break-all;
     }
-    .footnote {
-      font-family: Arial, sans-serif;
-      font-size: 10.5px;
-      color: #888;
-      margin-top: 2.5rem;
-      border-top: 0.5px solid #ccc;
-      padding-top: 0.9rem;
-      line-height: 1.7;
-    }
     @media (max-width: 600px) {
       .page { padding: 1.5rem 1.25rem; }
       h1 { font-size: 20px; }
@@ -247,27 +263,29 @@
 </head>
 <body>
 
-  <!-- Hidden YouTube player -->
-  <div id="yt-player" style="position:fixed;width:1px;height:1px;top:-9999px;left:-9999px;"></div>
-
   <div class="page">
 
     <div class="header">
       <div class="stamp">Confidential</div>
-      <div class="case-id">Case No. PVSAB-2026-Q1 &nbsp;·&nbsp;</div>
-      <h1>Pojkvänsuthyrning AB — Q1 2026 profitability analysis</h1>
+      <div class="case-id">Case No. PVSAB-2026-Q1 &nbsp;·&nbsp; CLASSIFIED DOSSIER - NORDIC OPERATIONS</div>
+      <h1>Pojkvänsuthyrning AB - Q1 2026 profitability analysis</h1>
       <p class="subtitle">Nordic companionship deployment services, Nigerian market division</p>
       <div class="meta-row">
-        <span><b>Industry:</b> Cross-cultural boyfriend logistics</span>
+        <span><b>Industry:</b> Boyfriend services</span>
         <span><b>Region:</b> Nigeria (primary), Gothenburg transit hub</span>
         <span><b>Period:</b> Q1 2026</span>
       </div>
-      <p class="to-line">Prepared for: <b>Ifeoma</b> &nbsp;·&nbsp; Advanced Corporate Finance, Module 7</p>
+      <p class="to-line">Issued to: <b>AGENT IFEOMA</b> &nbsp;·&nbsp; FIELD ASSESSMENT - CLEARANCE LEVEL 2</p>
     </div>
+
+    <div class="briefing-box">
+  <div class="briefing-label">Agent Briefing</div>
+  <p>To grant final mission clearance, your identity must be verified. A classified financial dossier on Pojkvänsuthyrning AB, a company of significant strategic interest to the organisation, has been retrieved. Only the real Agent Ifeoma would have the expertise to crack it. Do not share this dossier. Do not guess.</p>
+</div>
 
     <div class="section">
       <div class="section-title">Company background</div>
-      <p>Pojkvänsuthyrning AB ("PVSAB") was incorporated in 2025 in Stockholm, Sweden, to serve the growing demand for Nordic companionship experiences in the West African market. The company recruits, trains, and deploys Swedish boyfriends on medium- and long-term contracts to Nigerian clients (informally referred to as "soft-life boys" in local markets). Core service offerings include reading stories, sleep assistance, complement giving and sink maintenance.</p>
+      <p>Pojkvänsuthyrning AB ("PVSAB") was incorporated in 2025 in Stockholm, Sweden, to serve the growing demand for Nordic companionship experiences in the West African market. The company recruits, trains, and deploys Swedish boyfriends on medium- and long-term contracts to Nigerian clients (informally referred to as "soft-life boys" in local markets). Core service offerings include reading stories, sleep assistance, complement giving and home maintenance.</p>
       <p>PVSAB's operational model relies on a fleet of assets (the boyfriends) maintained to strict quality standards. Asset durability has emerged as a key strategic challenge following repeated exposure to client cooking environments.</p>
     </div>
 
@@ -298,61 +316,48 @@
             <td>73 same-week bookings × 500 SEK</td>
             <td class="num">36,500</td>
           </tr>
-          <tr class="subtotal">
-            <td>Total revenue</td>
-            <td></td>
-            <td class="num">3,051,700</td>
-          </tr>
+          
           <tr class="category"><td colspan="3">Operating costs</td></tr>
-          <tr>
-            <td>Asset depreciation</td>
-            <td>Wear &amp; tear on deployed boyfriend fleet, straight-line method</td>
-            <td class="num">320,000</td>
-          </tr>
-          <tr>
-            <td>Maintenance supplies</td>
-            <td>Apples (12 crates) and date supplies</td>
-            <td class="num">86,500</td>
-          </tr>
-          <tr>
-            <td>Gastrointestinal resilience supplements</td>
-            <td>Prophylactic gut-flora support, post-jollof recovery kits, antacid reserves</td>
-            <td class="num">107,200</td>
-          </tr>
-          <tr>
-            <td>Cultural acclimatisation training</td>
-            <td>Pepper tolerance grading (levels 1–5), Afrobeats rhythm certification (still pending), Intro to Nigerian Pidgin (tested in dream environments with real aunties in buses)</td>
-            <td class="num">192,800</td>
-          </tr>
-          <tr>
-            <td>Logistics &amp; deployment</td>
-            <td>SJ rail passes (Stockholm–Gothenburg)</td>
-            <td class="num">112,400</td>
-          </tr>
-          <tr>
-            <td>Opportunity cost</td>
-            <td>Foregone alternative deployments (assessed nil per board resolution Q1-2026-03)</td>
-            <td class="num">0</td>
-          </tr>
-          <tr class="subtotal">
-            <td>Total costs</td>
-            <td></td>
-            <td class="num">818,900</td>
-          </tr>
-          <tr class="net-profit">
-            <td>Net profit</td>
-            <td></td>
-            <td class="num">2,101,400</td>
-          </tr>
+<tr>
+  <td>Asset depreciation</td>
+  <td>Wear &amp; tear on deployed boyfriend fleet, straight-line method</td>
+  <td class="num">680,000</td>
+</tr>
+<tr>
+  <td>Maintenance supplies</td>
+  <td>Apples (12 crates) and date supplies</td>
+  <td class="num">86,500</td>
+</tr>
+<tr>
+  <td>Gastrointestinal resilience supplements</td>
+  <td>Prophylactic gut-flora support, post-jollof recovery kits, antacid reserves</td>
+  <td class="num">107,200</td>
+</tr>
+<tr>
+  <td>Cultural acclimatisation training</td>
+  <td>Pepper tolerance grading (levels 1–5), Afrobeats rhythm certification (still pending), Intro to Nigerian Pidgin (tested in dream environments with real aunties in buses)</td>
+  <td class="num">192,800</td>
+</tr>
+<tr>
+  <td>Logistics &amp; deployment</td>
+  <td>SJ rail passes (Stockholm–Gothenburg)</td>
+  <td class="num">886,588</td>
+</tr>
+<tr class="last-row">
+  <td>Opportunity cost</td>
+  <td>Foregone alternative deployments (assessed nil per board resolution Q1-2026-03)</td>
+  <td class="num">0</td>
+</tr>
         </tbody>
       </table>
     </div>
 
     <div class="question-box">
-      <div class="q-label">Exam question — mandatory for course completion</div>
-      <p>Based on the Q1 2026 financial statements for Pojkvänsuthyrning AB, calculate the company's <strong>net profit margin</strong> as a percentage of total revenue. Round your answer to the nearest whole number and enter it below to continue.</p>
-      <p class="formula">Net profit margin (%) = No cheating! </p>
-    </div>
+  <div class="q-label">Field Assessment - Identity Verification Required</div>
+  <p>Calculate Pojkvänsuthyrning AB's <strong>net profit margin</strong> as a percentage of total revenue, rounded to the nearest whole number. </p>
+    <p>Your clearance depends on it.</p>
+  <p class="formula">Net profit margin (%) = No cheating, Agent.</p>
+</div>
 
     <div class="answer-area">
       <div class="answer-row">
@@ -363,58 +368,55 @@
     </div>
 
     <div class="reveal" id="reveal-section">
-      <div class="reveal-label">Access granted. Outstanding analytical performance, Ifeoma.</div>
-      <p>Your submission has been verified. The examination committee is very pleased.</p>
-      <p style="color:#555; font-size:13px; font-family:Arial,sans-serif;">Proceed using the link below.</p>
-      <a class="reveal-link" href="REPLACE_WITH_YOUR_URL">→ next-module-url-goes-here</a>
+      <div class="reveal-label">Identity Verified. Clearance Granted.</div>
+      <p>Your analytical capabilities have been confirmed. PVSAB thanks you for your service.</p>
+      <p style="color:#555; font-size:13px; font-family:Arial,sans-serif;">Your final mission briefing awaits. Do not share this link.</p>
+      <a class="reveal-link" href="REPLACE_WITH_YOUR_URL">→ Access mission briefing</a>
     </div>
 
   </div>
 
+  <audio id="bg-audio" src="song.mp3" loop preload="auto" style="display:none;"></audio>
 
+  <script>
+    var musicStarted = false;
 
-<audio id="bg-audio" src="song.mp3" loop preload="auto" style="display:none;"></audio>
-
-<script>
-  var musicStarted = false;
-
-  function startMusic() {
-    if (!musicStarted) {
-      musicStarted = true;
-      var audio = document.getElementById('bg-audio');
-      audio.currentTime = 17;
-      audio.play();
+    function startMusic() {
+      if (!musicStarted) {
+        musicStarted = false;
+        var audio = document.getElementById('bg-audio');
+        audio.currentTime = 17;
+        
+      }
     }
-  }
 
-  document.addEventListener('click', startMusic, { once: true });
-  document.addEventListener('keydown', startMusic, { once: true });
+    document.addEventListener('click', startMusic, { once: false });
+    document.addEventListener('keydown', startMusic, { once: false });
 
-  function checkAnswer() {
-    startMusic();
-    var input = document.getElementById('answer-input');
-    var error = document.getElementById('error-msg');
-    var reveal = document.getElementById('reveal-section');
-    var val = parseInt(input.value, 10);
-    var correct = Math.round((2101400 / 3051700) * 100);
-    if (isNaN(val)) {
-      error.textContent = 'Please enter a number.';
-      return;
+    function checkAnswer() {
+      var input = document.getElementById('answer-input');
+      var error = document.getElementById('error-msg');
+      var reveal = document.getElementById('reveal-section');
+      var val = parseInt(input.value, 10);
+      var correct = Math.round((1098612 / 3051700) * 100);
+      if (isNaN(val)) {
+        error.textContent = 'Please enter a number.';
+        return;
+      }
+      if (val === correct) {
+        error.textContent = '';
+        reveal.classList.add('open');
+        reveal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        error.textContent = 'Incorrect. Review the dossier carefully and try again, Agent.';
+        input.value = '';
+        input.focus();
+      }
     }
-    if (val === correct) {
-      error.textContent = '';
-      reveal.classList.add('open');
-      reveal.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      error.textContent = 'Incorrect. Review the financials carefully and try again.';
-      input.value = '';
-      input.focus();
-    }
-  }
 
-  document.getElementById('answer-input').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') checkAnswer();
-  });
-</script>
+    document.getElementById('answer-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') checkAnswer();
+    });
+  </script>
 </body>
 </html>
